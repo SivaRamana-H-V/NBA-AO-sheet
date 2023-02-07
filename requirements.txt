@@ -3,3 +3,4 @@ openpyxl==3.1.0
 base64
 streamlit
 tempfile
+streamlib
