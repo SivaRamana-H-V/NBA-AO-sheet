@@ -3,3 +3,4 @@ io
 base64
 streamlit.components.v1
 tempfile
+--upgrade pip
