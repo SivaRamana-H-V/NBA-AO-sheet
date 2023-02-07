@@ -1,4 +1,4 @@
-pip==22.0.3
+pip==23.0
 openpyxl==3.1.0
 io==0.2.6
 base64
