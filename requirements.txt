@@ -1,6 +1,5 @@
-openpyxl=3.1.0
+openpyxl
 io
 base64
-streamlit.components.v1
+streamlit
 tempfile
---upgrade pip
