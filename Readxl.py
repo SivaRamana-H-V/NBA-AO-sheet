@@ -5,7 +5,7 @@ def ReadValue():
     
    uploaded_file = st.file_uploader("Upload Excel Files IA1 Mark",type=['xlsx','csv'])
    if uploaded_file is not None:
-      path = uploaded_file.name #"D:\\Users\\hp\\Documents\\XL\\IA1_CSE_1620_CY6151.xlsx"
+      path = uploaded_file #"D:\\Users\\hp\\Documents\\XL\\IA1_CSE_1620_CY6151.xlsx"
       wb_obj=openpyxl.load_workbook(path)
       sheet_obj=wb_obj.active
       max_row = sheet_obj.max_row
