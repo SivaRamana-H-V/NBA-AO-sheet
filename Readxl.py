@@ -3,7 +3,7 @@ import streamlit as st
 
 def ReadValue():
     
-   uploaded_file = st.file_uploader("Upload Excel Files IA1 Mark",type=['xlsx','csv'])
+   uploaded_file = st.file_uploader("Upload Excel Files IA1 Mark",type=['xlsx','csv','xls'])
    if uploaded_file is not None:
       path = uploaded_file #"D:\\Users\\hp\\Documents\\XL\\IA1_CSE_1620_CY6151.xlsx"
       wb_obj=openpyxl.load_workbook(path)
