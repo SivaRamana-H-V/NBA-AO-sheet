@@ -62,7 +62,7 @@ if uploaded_file is not None:
 
     IA1=Readxl.ReadValue()
     if IA1 is not None:
-        #st.write('IA1:',IA1)
+        st.write('IA1:',IA1)
         B=Place.XLPlace('D')
         #st.write(B)
         #st.write(len(B))
