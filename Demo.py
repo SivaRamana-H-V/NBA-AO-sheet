@@ -21,7 +21,7 @@ DN=st.text_input('Enter the Department Name :')
 Dn='DEPARTMENT OF '
 CN=st.text_input('Enter the Course Name :')
 FN=st.text_input('Enter the Faculty Name :')
-TSN=int(st.text_input("Total_Students :"))
+TSN=st.text_input("Total_Students :")
 
 @st.cache(suppress_st_warning=True)
 def download_excel(o,fn):
