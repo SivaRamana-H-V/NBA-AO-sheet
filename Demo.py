@@ -21,6 +21,7 @@ DN=st.text_input('Enter the Department Name :')
 Dn='DEPARTMENT OF '
 CN=st.text_input('Enter the Course Name :')
 FN=st.text_input('Enter the Faculty Name :')
+TSN=int(st.text_input("Total_Students :"))
 
 @st.cache(suppress_st_warning=True)
 def download_excel(o,fn):
@@ -45,15 +46,15 @@ if uploaded_file is not None:
     sheet['AT9']=FN
     sheet['AQ4']=Dn+DN
     try:
-        n=Place.XLPlace('C')
+        n=Place.XLPlace('C',TSN)
         for i in range(len(n)):
             sheet[n[i]] = N[i]
 
-        r=Place.XLPlace('B')
+        r=Place.XLPlace('B',TSN)
         for i in range(len(r)):
             sheet[r[i]] = int(R[i])
         
-        u=Place.XLPlace('AI')
+        u=Place.XLPlace('AI',TSN)
         for i in range(len(u)):
             sheet[u[i]] = U[i]
         
@@ -62,14 +63,14 @@ if uploaded_file is not None:
 
     IA1=Readxl.ReadValue()
     if IA1 is not None:
-        st.write('IA1:',IA1)
-        B=Place.XLPlace('D')
+        #st.write('IA1:',IA1)
+        B=Place.XLPlace('D',TSN)
         #st.write(B)
-        #st.write(len(B))
+        st.write(len(B))
         for i in range(len(B)):
             sheet[B[i]] = IA1[0][i]
         
-        B1=Place.XLPlace('J')
+        B1=Place.XLPlace('J',TSN)
         for i in range(len(B)):
             sheet[B1[i]] = IA1[1][i]
         #workbook.save('output.xlsx')
@@ -77,29 +78,29 @@ if uploaded_file is not None:
         IA2=ReadxlIA2.ReadValue()
         if IA2 is not None:
             #st.write('IA2:',IA2)
-            C=Place.XLPlace('P')
+            C=Place.XLPlace('P',TSN)
             for i in range(len(C)):
                 sheet[C[i]] = IA2[0][i]
-            C1=Place.XLPlace('V')
+            C1=Place.XLPlace('V',TSN)
             for i in range(len(C)):
                 sheet[C1[i]] = IA2[1][i]
 
             Model=ReadxlModel.ReadValue()
             if Model is not None:
                 #st.write('Model:',Model)
-                D=Place.XLPlace('E')
+                D=Place.XLPlace('E',TSN)
                 for i in range(len(D)):
                     sheet[D[i]] = Model[0][i]
-                D1=Place.XLPlace('K')
+                D1=Place.XLPlace('K',TSN)
                 for i in range(len(D1)):
                     sheet[D1[i]] = Model[1][i]
-                D2=Place.XLPlace('Q')
+                D2=Place.XLPlace('Q',TSN)
                 for i in range(len(D2)):
                     sheet[D2[i]] = Model[2][i]
-                D3=Place.XLPlace('W')
+                D3=Place.XLPlace('W',TSN)
                 for i in range(len(D3)):
                     sheet[D3[i]] = Model[3][i]
-                D4=Place.XLPlace('AC')
+                D4=Place.XLPlace('AC',TSN)
                 for i in range(len(D4)):
                     sheet[D4[i]] = Model[4][i]
                 output = io.BytesIO()
