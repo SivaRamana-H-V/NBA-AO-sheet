@@ -1,5 +1,5 @@
 def XLPlace(A,TSN):
-  TSN=TSN
+  TSn=int(TSN)
   S=[]
   for i in range(7,TSN+1):
     B="%s%s" %(A,i)
