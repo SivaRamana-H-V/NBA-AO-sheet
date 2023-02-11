@@ -31,8 +31,9 @@ def download_excel(o,fn):
 def Convert(string):
     li = list(string.split("\n"))
     return li
-N=Convert(Name)
+'''N=Convert(Name)
 R=Convert(REG)
+'''
 U=Convert(Rank)
 # st.write(Convert(Name))
 # st.write(Convert(REG))
