@@ -42,9 +42,9 @@ if uploaded_file is not None:
     workbook = load_workbook(uploaded_file)
     sheet = workbook.active
 
-    sheet['AT8']=CN
-    sheet['AT9']=FN
-    sheet['AQ4']=Dn+DN
+    #sheet['AT8']=CN
+    #sheet['AT9']=FN
+    #sheet['AQ4']=Dn+DN
     try:
         '''n=Place.XLPlace('C',TSN)
         for i in range(len(n)):
