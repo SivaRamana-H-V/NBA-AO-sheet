@@ -14,13 +14,13 @@ from tempfile import NamedTemporaryFile
 
 
 st.title('NBA')
-'''Name = st.text_area('Enter the Student Names List :')
-REG = st.text_area('Enter the Student Names REG.NO :')
+#Name = st.text_area('Enter the Student Names List :')
+#REG = st.text_area('Enter the Student Names REG.NO :')
 Rank=st.text_area('Enter the Student University Rank :')
-DN=st.text_input('Enter the Department Name :')
-Dn='DEPARTMENT OF '
-CN=st.text_input('Enter the Course Name :')
-FN=st.text_input('Enter the Faculty Name :')'''
+#DN=st.text_input('Enter the Department Name :')
+#Dn='DEPARTMENT OF '
+#CN=st.text_input('Enter the Course Name :')
+#FN=st.text_input('Enter the Faculty Name :')
 TSN=st.text_input("Total_Students :")
 
 @st.cache(suppress_st_warning=True)
@@ -31,9 +31,8 @@ def download_excel(o,fn):
 def Convert(string):
     li = list(string.split("\n"))
     return li
-'''N=Convert(Name)
-R=Convert(REG)
-'''
+#N=Convert(Name)
+#R=Convert(REG)
 U=Convert(Rank)
 # st.write(Convert(Name))
 # st.write(Convert(REG))
