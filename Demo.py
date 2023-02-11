@@ -55,7 +55,6 @@ if uploaded_file is not None:
         #    sheet[r[i]] = int(R[i])
         
         u=Place.XLPlace('AI',TSN)
-        st.write(u)
         for i in range(len(u)):
             sheet[u[i]] = U[i]
         
@@ -66,7 +65,7 @@ if uploaded_file is not None:
     if IA1 is not None:
         #st.write('IA1:',IA1)
         B=Place.XLPlace('D',TSN)
-        #st.write(B)
+        st.write(B)
         st.write(len(B))
         for i in range(len(B)):
             sheet[B[i]] = IA1[0][i]
