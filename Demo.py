@@ -14,13 +14,13 @@ from tempfile import NamedTemporaryFile
 
 
 st.title('NBA')
-Name = st.text_area('Enter the Student Names List :')
+'''Name = st.text_area('Enter the Student Names List :')
 REG = st.text_area('Enter the Student Names REG.NO :')
 Rank=st.text_area('Enter the Student University Rank :')
 DN=st.text_input('Enter the Department Name :')
 Dn='DEPARTMENT OF '
 CN=st.text_input('Enter the Course Name :')
-FN=st.text_input('Enter the Faculty Name :')
+FN=st.text_input('Enter the Faculty Name :')'''
 TSN=st.text_input("Total_Students :")
 
 @st.cache(suppress_st_warning=True)
@@ -46,13 +46,13 @@ if uploaded_file is not None:
     sheet['AT9']=FN
     sheet['AQ4']=Dn+DN
     try:
-        n=Place.XLPlace('C',TSN)
+        '''n=Place.XLPlace('C',TSN)
         for i in range(len(n)):
             sheet[n[i]] = N[i]
 
         r=Place.XLPlace('B',TSN)
         for i in range(len(r)):
-            sheet[r[i]] = int(R[i])
+            sheet[r[i]] = int(R[i])'''
         
         u=Place.XLPlace('AI',TSN)
         st.write(u)
