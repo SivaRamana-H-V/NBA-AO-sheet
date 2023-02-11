@@ -46,13 +46,13 @@ if uploaded_file is not None:
     #sheet['AT9']=FN
     #sheet['AQ4']=Dn+DN
     try:
-        '''n=Place.XLPlace('C',TSN)
-        for i in range(len(n)):
-            sheet[n[i]] = N[i]
+        #n=Place.XLPlace('C',TSN)
+        #for i in range(len(n)):
+        #    sheet[n[i]] = N[i]
 
-        r=Place.XLPlace('B',TSN)
-        for i in range(len(r)):
-            sheet[r[i]] = int(R[i])'''
+        #r=Place.XLPlace('B',TSN)
+        #for i in range(len(r)):
+        #    sheet[r[i]] = int(R[i])
         
         u=Place.XLPlace('AI',TSN)
         st.write(u)
