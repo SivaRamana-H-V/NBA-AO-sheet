@@ -55,6 +55,7 @@ if uploaded_file is not None:
             sheet[r[i]] = int(R[i])
         
         u=Place.XLPlace('AI',TSN)
+        st.write(u)
         for i in range(len(u)):
             sheet[u[i]] = U[i]
         
